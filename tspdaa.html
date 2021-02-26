@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device_width, initial-scale=1.0">
+        <title>Smriti Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:300,400&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/smriti.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li><!-- href links to id="home" from section-->
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                <strong>Optimized Delivery System</strong>
+            </h1><!-- double hyphen = modifier class-->
+            <p class="section__subtitle section__subtitle--intro">For efficient package deliveries</p>
+            <img src="img/tspdaa-02.jpg" alt="A picture of Smriti Rao smiling" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>Given a set of N delivery spots and distance between each pair of delivery spots, 
+                I worked on finding the shortest possible optimal path, minimising travel cost between 
+                each pair of delivery spots, with each spot visited exactly once. This  
+                problem, which closely relates to Traveling Salesperson Problem, was solved using 
+                dynamic programming and backtracking.</p>
+            <img src="img/tspdaa-01.jpg" alt="">
+            <p>The main idea behind dynamic programming was to compute the optimal solution 
+                for all subpaths of length N while using data from the already known 
+                optimal partial tours of length N-1. The set of visited nodes in the subpath and 
+                the index of the last visited node in the path, these two form the dynamic programming state.
+            </p>
+            <p>In the backtracking approach, the algorithm recursively solved for the optimal path, 
+                building the solution in increments, removing the solutions that fail to satisfy 
+                the constraint for travelling salesman problem, minimising cost of travelling from 
+                start spot, visiting all spots and returning to the start spot.
+            </p>
+            <p><a float="left" href="https://github.com/Smriti0311/Optimized-Package-Delivery-System">Source</a></p>
+            <p><a float="right" href="https://youtu.be/Mq8nxsmDeBs">Presentation</a></p>
+            
+        </div>
+
+        
+
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:smritigrao@gmail.com" class="footer-link">smritigrao@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://facebook.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>            
+        </footer>
+
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+
+
+</html>
